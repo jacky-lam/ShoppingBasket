@@ -1,0 +1,17 @@
+/bin
+/build
+/dist
+/config.properties
+/deploy.xml
+/Cleaner/target
+.idea
+*.class
+
+#IntelliJ
+*.iml
+.settings
+
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath

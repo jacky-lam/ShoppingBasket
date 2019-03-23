@@ -68,44 +68,35 @@ Project Assumptions:
     - Number of spaces inbetween the goods do not matter.
     - Hard rejection: if there are any unknown/invalid/typo of the items detected: flag error to end-user.
 
-    ---------------------------------
-    Case one: goods with offer
-    Input:
-      PriceBasket Apples Milk Bread
+---------------------------------
 
-    Output:
-      Subtotal: £3.10
-      Apples 10% off: -10p
-      Total: £3.00
-    ---------------------------------
-    Case two: goods with no offer
-    Input:
-      PriceBasket Milk
+- Case one: goods with offer
+    - Input:
+        PriceBasket Apples Milk Bread
+    - Output:
+        Subtotal: £3.10
+        Apples 10% off: -10p
+        Total: £3.00
 
-    Output:
-      Subtotal: £1.30
-      (No offers available)
-      Total price: £1.30
-    ---------------------------------
-    Case three: no goods
-    Input:
-      PriceBasket 
+- Case two: goods with no offer
+    - Input:
+        PriceBasket Milk
+    - Output:
+        Subtotal: £1.30
+        (No offers available)
+        Total price: £1.30
+  
 
-    Output:
-      Subtotal: 0p
-      (No offers available)
-      Total price: 0p
-    ---------------------------------
-    Case four: invalid good
-    Input:
-      PriceBasket Apples Bob Jim
+- Case three: no goods
+    - Input:
+        PriceBasket 
+    - Output:
+        Subtotal: 0p
+        (No offers available)
+        Total price: 0p
 
-    Output:
-      Error: Detected unknown goods - Bob Jim      
-    ---------------------------------
-
-TODO:
-- Test case: all possibilities.
-- handle different input-commands.
-- fastest way to trim whitespace string.
-- need .bash script to generate files: https://www.mkyong.com/java/how-to-make-an-executable-jar-file/ 
+- Case four: invalid good
+    - Input:
+        PriceBasket Apples Bob Jim
+    - Output:
+        Error: Detected unknown goods - Bob Jim

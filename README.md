@@ -50,7 +50,7 @@ Build & Run Java application
 ----------------------------------------------------------
 There is an executable JAR file supplied, but if you want to build it yourself...
 
-1. Unzip the project-folder to a location.
+1. Unzip the project-folder to a location/Downlaod from https://github.com/jacky-lam/ShoppingBasket
 2. Open your command-line/terminal and cd to the project's root folder "ShoppingBasket".
 3. Run command to build via Maven:
     A. mvn clean install

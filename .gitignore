@@ -3,7 +3,7 @@
 /dist
 /config.properties
 /deploy.xml
-/Cleaner/target
+/target
 .idea
 *.class
 

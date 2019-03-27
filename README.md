@@ -53,13 +53,13 @@ There is an executable JAR file supplied, but if you want to build it yourself..
 1. Unzip the project-folder to a location/Downlaod from https://github.com/jacky-lam/ShoppingBasket
 2. Open your command-line/terminal and cd to the project's root folder "ShoppingBasket".
 3. Run command to build via Maven:
-    A. mvn clean install
-    B. mvn dependency:copy-dependencies
-    C. cd target
+    - "mvn clean install"
+    - "mvn dependency:copy-dependencies"
+    - "cd target"
         - you should hopefully see a "ShoppingBasket-1.0-SNAPSHOT.jar" and folder "dependency"
-    D. run java:
-        - Windows: java -cp ShoppingBasket-1.0-SNAPSHOT.jar;dependency/*;. com.app.ShoppingBasketMain
-        - Linux/Mac (should in theory be): java -cp ShoppingBasket-1.0-SNAPSHOT.jar:dependency/*;. com.app.ShoppingBasketMain
+    - run java:
+        - "Windows: java -cp ShoppingBasket-1.0-SNAPSHOT.jar;dependency/*;. com.app.ShoppingBasketMain"
+        - "Linux/Mac (should in theory be): java -cp ShoppingBasket-1.0-SNAPSHOT.jar:dependency/*;. com.app.ShoppingBasketMain"
 
 *Debugger logs are turned off. To turn it on, just change the log4j.properties in the resource folder before building.
     From:   log4j.rootLogger=OFF, stdout
